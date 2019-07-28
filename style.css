@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #eb2f64, #ba265d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  color: #0f222d;
+  position: relative;
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+}
+
+.main {
+  width: 420px;
+  /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;*/
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Righteous", cursive;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  display: flow-root;
+}
+
+input[type="text"] {
+  width: 280px;
+  height: 30px;
+  margin-top: 5px;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  background: #fff;
+  color: #2f4f4f;
+  font-family: "Comfortaa", cursive;
+  float: left;
+}
+
+button {
+  font-size: 1em;
+  color: #333;
+  background-color: #fb8c00;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Comfortaa", cursive;
+  float: right;
+}
+
+.taskBoard {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 40px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  font-size: 1em;
+  color: #2f4f4f;
+}
+
+li:last-child {
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+a {
+  float: right;
+  text-align: right;
+  color: #ff6161;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.delete {
+  border: 1.5px solid #ff6161;
+  background-color: #ff6161;
+  height: 25px;
+  width: 25px;
+  transform: scale(1);
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+  padding-top: 1px;
+}
+
+.delete:hover {
+  transform: scale(0.91);
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+
+  .main {
+    margin: auto;
+    width: 90%;
+    margin: 5px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    width: 70%;
+    margin-top: 3px;
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 8px 10px;
+  }
+
+  .taskBoard {
+    padding: 20px 25px;
+  }
+
+  .delete {
+    padding: 2px;
+  }
+}
